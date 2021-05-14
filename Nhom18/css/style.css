@@ -1,0 +1,313 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 1500px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+header {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+    nav ul li {
+        width: 120px;
+        text-align: center;
+    }
+
+        nav ul li a {
+            display: block;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+            nav ul li a:hover {
+                color: blue;
+            }
+
+input {
+    border-radius: 10px;
+    outline: none;
+    padding: 6px;
+    margin-left:150px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    max-width: 1300px;
+   
+}
+
+    footer .item {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer .logo {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+
+    footer .top {
+        background-color: lightgray;
+        padding: 20px 100px;
+    }
+
+    footer .main {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 100px;
+    }
+
+        footer .main .center {
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+            padding-left: 30px;
+        }
+
+        footer .main .left {
+            margin-right: -30px;
+        }
+
+        footer .main .left {
+            width: 40%;
+        }
+
+        footer .main .center,
+        footer .main .right {
+            width: 30%;
+        }
+
+    footer .list {
+        display: flex;
+        margin-top: 25px;
+    }
+
+.list li {
+    list-style-type: square;
+    height: 30px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .list1 {
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+footer .pic1 img {
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+footer .pic2 {
+    display: flex;
+    margin-top: 10px;
+}
+
+    footer .pic2 img {
+        width: 70px;
+        height: 40px;
+        margin-right: 20px;
+    }
+
+footer .bottom {
+    padding: 5px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .bottom .info {
+    width: 50%;
+}
+
+footer .bottom ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.slideshow-container {
+    max-width: 1300px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.slideshow-container img {
+   height: 450px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.main1 {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.content1 {
+    display: flex;
+    justify-content: space-between;
+}
+.left1 {
+    width: 73%;
+}
+.right1 {
+    width: 25%;
+}
+
+    .right1 img {
+        width: 100%;
+    }
+
+    .right1 li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+
+.dsbaihat ul {
+    list-style: none;
+}
+
+.baihat-trai > li, .baihat-phai > li {
+    display: flex;
+    padding: 10px 0px;
+}
+
+.baihat-trai, .baihat-phai {
+    width: 49%;
+}
+
+.info-baihat {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.dsbaihat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.baihat img {
+    width: 50px;
+    height: 50px;
+}
+
+.theloai img {
+    width: 190px;
+    height: 107px;
+}
+
+.album img {
+    width: 100px;
+    height: 100px;
+}
+
+.album ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    margin-top:10px;
+    background-color: #2f80ed;
+    display:flex;
+    justify-content:space-around;
+    padding:10px;
+    height:40px;
+    line-height:40px;
+    color:white;   
+}
+.footer-left a{
+    color:white;
+    margin-left:25px;
+}
+.login{
+    margin-left:80px;
+    background-color:slategrey;
+    border-radius:10px;
+    padding:0 10px;
+    height:35px;
+    line-height:35px;
+}
+.login a{
+    color:white
+}
+.dstheloai {
+    list-style: none;
+    position: relative;
+}
+
+.dstheloai .title {
+        position: absolute;
+        top: 40px;
+        left: 60px;
+        color: white;
+    }
+

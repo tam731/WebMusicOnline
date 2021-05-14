@@ -1,0 +1,625 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95B632DF-CA4D-40FF-8ED5-9AB0735CE3EB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nhom18</RootNamespace>
+    <AssemblyName>Nhom18</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="audio\Co-Em-Cho-MIN-Mr-A.mp3" />
+    <Content Include="audio\Sai-Nguoi-Sai-Thoi-Diem-Thanh-Hung.mp3" />
+    <Content Include="audio\Tim-MIN-Mr-A.mp3" />
+    <Content Include="css\fontawesome.css" />
+    <Content Include="css\fontawesome.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style1.css" />
+    <Content Include="images\album\pic1.jpg" />
+    <Content Include="images\album\pic2.jpg" />
+    <Content Include="images\album\pic3.jpg" />
+    <Content Include="images\album\pic4.jpg" />
+    <Content Include="images\album\pic5.jpg" />
+    <Content Include="images\album\pic6.jpg" />
+    <Content Include="images\album\pic7.jpg" />
+    <Content Include="images\album\pic8.jpg" />
+    <Content Include="images\baihat\pic1.jpg" />
+    <Content Include="images\baihat\pic2.jpg" />
+    <Content Include="images\baihat\pic3.jpg" />
+    <Content Include="images\baihat\pic4.jpg" />
+    <Content Include="images\baihat\pic5.jpg" />
+    <Content Include="images\baihat\pic6.jpg" />
+    <Content Include="images\baihat\pic7.jpg" />
+    <Content Include="images\baihat\pic8.jpg" />
+    <Content Include="images\chude\pic1.jpg" />
+    <Content Include="images\chude\pic2.jpg" />
+    <Content Include="images\chude\pic3.jpg" />
+    <Content Include="images\chude\pic4.jpg" />
+    <Content Include="images\chude\pic5.jpg" />
+    <Content Include="images\chude\pic6.jpg" />
+    <Content Include="images\chude\pic7.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_footer\acr.png" />
+    <Content Include="images\logo_footer\app.png" />
+    <Content Include="images\logo_footer\appstore.png" />
+    <Content Include="images\logo_footer\benthanhaudio.png" />
+    <Content Include="images\logo_footer\bocongthuong.png" />
+    <Content Include="images\logo_footer\chplay.png" />
+    <Content Include="images\logo_footer\dmca.png" />
+    <Content Include="images\logo_footer\fb.png" />
+    <Content Include="images\logo_footer\insta.png" />
+    <Content Include="images\logo_footer\logo.png" />
+    <Content Include="images\logo_footer\namviet.png" />
+    <Content Include="images\logo_footer\riav.jpg" />
+    <Content Include="images\logo_footer\skymusic.png" />
+    <Content Include="images\logo_footer\sonymusic.png" />
+    <Content Include="images\logo_footer\yg.png" />
+    <Content Include="images\playlist\pic1.jpg" />
+    <Content Include="images\playlist\pic2.jpg" />
+    <Content Include="images\playlist\pic3.jpg" />
+    <Content Include="images\slideshow\pic1.jpg" />
+    <Content Include="images\slideshow\pic2.jpg" />
+    <Content Include="images\slideshow\pic3.jpg" />
+    <Content Include="images\theloai\pic1.jpg" />
+    <Content Include="images\theloai\pic2.jpg" />
+    <Content Include="images\theloai\pic3.jpg" />
+    <Content Include="js\app.js" />
+    <Content Include="Views\BE\Dangky.aspx" />
+    <Content Include="Views\BE\DSAlbum.aspx" />
+    <Content Include="Views\BE\DSBaiHat.aspx" />
+    <Content Include="Views\BE\DSCaSi.aspx" />
+    <Content Include="Views\BE\DSCaSiAB.aspx" />
+    <Content Include="Views\BE\DSCaSiBH.aspx" />
+    <Content Include="Views\BE\DSChuDe.aspx" />
+    <Content Include="Views\BE\DSPlayList.aspx" />
+    <Content Include="Views\BE\DSPlaylistBH.aspx" />
+    <Content Include="Views\BE\DSTheLoai.aspx" />
+    <Content Include="Views\BE\Login.aspx" />
+    <Content Include="Views\BE\QLAlbum.aspx" />
+    <Content Include="Views\BE\QLBaiHat.aspx" />
+    <Content Include="Views\BE\QLCaSi.aspx" />
+    <Content Include="Views\BE\QLCaSiAB.aspx" />
+    <Content Include="Views\BE\QLCaSiBH.aspx" />
+    <Content Include="Views\BE\QLChuDe.aspx" />
+    <Content Include="Views\BE\QLPLayList.aspx" />
+    <Content Include="Views\BE\QLPlaylistBH.aspx" />
+    <Content Include="Views\BE\QLTaiKhoan.aspx" />
+    <Content Include="Views\BE\QLTheLoai.aspx" />
+    <Content Include="Views\BE\SuaAlbum.aspx" />
+    <Content Include="Views\BE\SuaBaiHat.aspx" />
+    <Content Include="Views\BE\SuaCaSi.aspx" />
+    <Content Include="Views\BE\SuaCaSiAB.aspx" />
+    <Content Include="Views\BE\SuaCaSiBH.aspx" />
+    <Content Include="Views\BE\SuaChuDe.aspx" />
+    <Content Include="Views\BE\SuaPlayList.aspx" />
+    <Content Include="Views\BE\SuaPlaylistBH.aspx" />
+    <Content Include="Views\BE\SuaTheLoai.aspx" />
+    <Content Include="Views\BE\ThemAlbum.aspx" />
+    <Content Include="Views\BE\ThemBaiHat.aspx" />
+    <Content Include="Views\BE\ThemCaSi.aspx" />
+    <Content Include="Views\BE\ThemCaSiAB.aspx" />
+    <Content Include="Views\BE\ThemCaSiBH.aspx" />
+    <Content Include="Views\BE\ThemChuDe.aspx" />
+    <Content Include="Views\BE\ThemPlayList.aspx" />
+    <Content Include="Views\BE\ThemPlaylistBH.aspx" />
+    <Content Include="Views\BE\ThemTheLoai.aspx" />
+    <Content Include="Views\FE\BaiHat.aspx" />
+    <Content Include="Views\FE\CaSi.aspx" />
+    <Content Include="Views\FE\ChitietAlbum.aspx" />
+    <Content Include="Views\FE\ChiTietBaiHat.aspx" />
+    <Content Include="Views\FE\ChitietCaSi.aspx" />
+    <Content Include="Views\FE\ChiTietChuDe.aspx" />
+    <Content Include="Views\FE\ChitietPlaylist.aspx" />
+    <Content Include="Views\FE\ChuDe.aspx" />
+    <Content Include="Views\FE\PlayList.aspx" />
+    <Content Include="Views\FE\TheLoai.aspx" />
+    <Content Include="Views\FE\TimKiem.aspx" />
+    <Content Include="Views\FE\TrangChu.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AlbumController.cs" />
+    <Compile Include="Controllers\BaiHatController.cs" />
+    <Compile Include="Controllers\CaSiABController.cs" />
+    <Compile Include="Controllers\CaSiBHController.cs" />
+    <Compile Include="Controllers\CaSiController.cs" />
+    <Compile Include="Controllers\ChuDeController.cs" />
+    <Compile Include="Controllers\PlayListBHController.cs" />
+    <Compile Include="Controllers\TaiKhoanController.cs" />
+    <Compile Include="Models\PlaylistBH.cs" />
+    <Compile Include="Controllers\PlayListController.cs" />
+    <Compile Include="Controllers\TheLoaiController.cs" />
+    <Compile Include="Models\Album.cs" />
+    <Compile Include="Models\BaiHat.cs" />
+    <Compile Include="Models\CaSi.cs" />
+    <Compile Include="Models\CaSiAB.cs" />
+    <Compile Include="Models\CaSiBH.cs" />
+    <Compile Include="Models\ChuDe.cs" />
+    <Compile Include="Models\Playlist.cs" />
+    <Compile Include="Models\TaiKhoan.cs" />
+    <Compile Include="Models\TheLoai.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\BE\Dangky.aspx.cs">
+      <DependentUpon>Dangky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\Dangky.aspx.designer.cs">
+      <DependentUpon>Dangky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\DSAlbum.aspx.cs">
+      <DependentUpon>DSAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\DSAlbum.aspx.designer.cs">
+      <DependentUpon>DSAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\DSBaiHat.aspx.cs">
+      <DependentUpon>DSBaiHat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\DSBaiHat.aspx.designer.cs">
+      <DependentUpon>DSBaiHat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\DSCaSi.aspx.cs">
+      <DependentUpon>DSCaSi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\DSCaSi.aspx.designer.cs">
+      <DependentUpon>DSCaSi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\DSCaSiAB.aspx.cs">
+      <DependentUpon>DSCaSiAB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\DSCaSiAB.aspx.designer.cs">
+      <DependentUpon>DSCaSiAB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\DSCaSiBH.aspx.cs">
+      <DependentUpon>DSCaSiBH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\DSCaSiBH.aspx.designer.cs">
+      <DependentUpon>DSCaSiBH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\DSChuDe.aspx.cs">
+      <DependentUpon>DSChuDe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\DSChuDe.aspx.designer.cs">
+      <DependentUpon>DSChuDe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\DSPlayList.aspx.cs">
+      <DependentUpon>DSPlayList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\DSPlayList.aspx.designer.cs">
+      <DependentUpon>DSPlayList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\DSPlaylistBH.aspx.cs">
+      <DependentUpon>DSPlaylistBH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\DSPlaylistBH.aspx.designer.cs">
+      <DependentUpon>DSPlaylistBH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\DSTheLoai.aspx.cs">
+      <DependentUpon>DSTheLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\DSTheLoai.aspx.designer.cs">
+      <DependentUpon>DSTheLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\QLAlbum.aspx.cs">
+      <DependentUpon>QLAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\QLAlbum.aspx.designer.cs">
+      <DependentUpon>QLAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\QLBaiHat.aspx.cs">
+      <DependentUpon>QLBaiHat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\QLBaiHat.aspx.designer.cs">
+      <DependentUpon>QLBaiHat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\QLCaSi.aspx.cs">
+      <DependentUpon>QLCaSi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\QLCaSi.aspx.designer.cs">
+      <DependentUpon>QLCaSi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\QLCaSiAB.aspx.cs">
+      <DependentUpon>QLCaSiAB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\QLCaSiAB.aspx.designer.cs">
+      <DependentUpon>QLCaSiAB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\QLCaSiBH.aspx.cs">
+      <DependentUpon>QLCaSiBH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\QLCaSiBH.aspx.designer.cs">
+      <DependentUpon>QLCaSiBH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\QLChuDe.aspx.cs">
+      <DependentUpon>QLChuDe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\QLChuDe.aspx.designer.cs">
+      <DependentUpon>QLChuDe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\QLPLayList.aspx.cs">
+      <DependentUpon>QLPLayList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\QLPLayList.aspx.designer.cs">
+      <DependentUpon>QLPLayList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\QLPlaylistBH.aspx.cs">
+      <DependentUpon>QLPlaylistBH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\QLPlaylistBH.aspx.designer.cs">
+      <DependentUpon>QLPlaylistBH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\QLTaiKhoan.aspx.cs">
+      <DependentUpon>QLTaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\QLTaiKhoan.aspx.designer.cs">
+      <DependentUpon>QLTaiKhoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\QLTheLoai.aspx.cs">
+      <DependentUpon>QLTheLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\QLTheLoai.aspx.designer.cs">
+      <DependentUpon>QLTheLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\SuaAlbum.aspx.cs">
+      <DependentUpon>SuaAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\SuaAlbum.aspx.designer.cs">
+      <DependentUpon>SuaAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\SuaBaiHat.aspx.cs">
+      <DependentUpon>SuaBaiHat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\SuaBaiHat.aspx.designer.cs">
+      <DependentUpon>SuaBaiHat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\SuaCaSi.aspx.cs">
+      <DependentUpon>SuaCaSi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\SuaCaSi.aspx.designer.cs">
+      <DependentUpon>SuaCaSi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\SuaCaSiAB.aspx.cs">
+      <DependentUpon>SuaCaSiAB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\SuaCaSiAB.aspx.designer.cs">
+      <DependentUpon>SuaCaSiAB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\SuaCaSiBH.aspx.cs">
+      <DependentUpon>SuaCaSiBH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\SuaCaSiBH.aspx.designer.cs">
+      <DependentUpon>SuaCaSiBH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\SuaChuDe.aspx.cs">
+      <DependentUpon>SuaChuDe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\SuaChuDe.aspx.designer.cs">
+      <DependentUpon>SuaChuDe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\SuaPlayList.aspx.cs">
+      <DependentUpon>SuaPlayList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\SuaPlayList.aspx.designer.cs">
+      <DependentUpon>SuaPlayList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\SuaPlaylistBH.aspx.cs">
+      <DependentUpon>SuaPlaylistBH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\SuaPlaylistBH.aspx.designer.cs">
+      <DependentUpon>SuaPlaylistBH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\SuaTheLoai.aspx.cs">
+      <DependentUpon>SuaTheLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\SuaTheLoai.aspx.designer.cs">
+      <DependentUpon>SuaTheLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\ThemAlbum.aspx.cs">
+      <DependentUpon>ThemAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\ThemAlbum.aspx.designer.cs">
+      <DependentUpon>ThemAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\ThemBaiHat.aspx.cs">
+      <DependentUpon>ThemBaiHat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\ThemBaiHat.aspx.designer.cs">
+      <DependentUpon>ThemBaiHat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\ThemCaSi.aspx.cs">
+      <DependentUpon>ThemCaSi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\ThemCaSi.aspx.designer.cs">
+      <DependentUpon>ThemCaSi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\ThemCaSiAB.aspx.cs">
+      <DependentUpon>ThemCaSiAB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\ThemCaSiAB.aspx.designer.cs">
+      <DependentUpon>ThemCaSiAB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\ThemCaSiBH.aspx.cs">
+      <DependentUpon>ThemCaSiBH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\ThemCaSiBH.aspx.designer.cs">
+      <DependentUpon>ThemCaSiBH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\ThemChuDe.aspx.cs">
+      <DependentUpon>ThemChuDe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\ThemChuDe.aspx.designer.cs">
+      <DependentUpon>ThemChuDe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\ThemPlayList.aspx.cs">
+      <DependentUpon>ThemPlayList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\ThemPlayList.aspx.designer.cs">
+      <DependentUpon>ThemPlayList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\ThemPlaylistBH.aspx.cs">
+      <DependentUpon>ThemPlaylistBH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\ThemPlaylistBH.aspx.designer.cs">
+      <DependentUpon>ThemPlaylistBH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BE\ThemTheLoai.aspx.cs">
+      <DependentUpon>ThemTheLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BE\ThemTheLoai.aspx.designer.cs">
+      <DependentUpon>ThemTheLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\BaiHat.aspx.cs">
+      <DependentUpon>BaiHat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\BaiHat.aspx.designer.cs">
+      <DependentUpon>BaiHat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\CaSi.aspx.cs">
+      <DependentUpon>CaSi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\CaSi.aspx.designer.cs">
+      <DependentUpon>CaSi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\ChitietAlbum.aspx.cs">
+      <DependentUpon>ChitietAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\ChitietAlbum.aspx.designer.cs">
+      <DependentUpon>ChitietAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\ChiTietBaiHat.aspx.cs">
+      <DependentUpon>ChiTietBaiHat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\ChiTietBaiHat.aspx.designer.cs">
+      <DependentUpon>ChiTietBaiHat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\ChitietCaSi.aspx.cs">
+      <DependentUpon>ChitietCaSi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\ChitietCaSi.aspx.designer.cs">
+      <DependentUpon>ChitietCaSi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\ChiTietChuDe.aspx.cs">
+      <DependentUpon>ChiTietChuDe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\ChiTietChuDe.aspx.designer.cs">
+      <DependentUpon>ChiTietChuDe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\ChitietPlaylist.aspx.cs">
+      <DependentUpon>ChitietPlaylist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\ChitietPlaylist.aspx.designer.cs">
+      <DependentUpon>ChitietPlaylist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\ChuDe.aspx.cs">
+      <DependentUpon>ChuDe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\ChuDe.aspx.designer.cs">
+      <DependentUpon>ChuDe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\PlayList.aspx.cs">
+      <DependentUpon>PlayList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\PlayList.aspx.designer.cs">
+      <DependentUpon>PlayList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\TheLoai.aspx.cs">
+      <DependentUpon>TheLoai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\TheLoai.aspx.designer.cs">
+      <DependentUpon>TheLoai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\TimKiem.aspx.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\TimKiem.aspx.designer.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FE\TrangChu.aspx.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FE\TrangChu.aspx.designer.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\Site1.Master" />
+    <Content Include="Views\Shared\Site2.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\songs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62680</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44300/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

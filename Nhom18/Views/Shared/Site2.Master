@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Nhom18.Views.Shared.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+  <title>
+      <asp:ContentPlaceHolder ID="tieude" runat="server">
+         
+      </asp:ContentPlaceHolder>
+  </title>
+     <link type="text/css" rel="stylesheet" href="../../css/style1.css" />
+    <style>
+        .logout {
+        margin-left: 50px;
+        margin-top: 30px;
+        border:none;
+        outline:none;
+        padding:5px;
+        background-color:crimson;
+        color:white;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Button runat="server" ID="btnlogout" Text="Đăng xuất" CssClass="logout" OnClick="btnlogout_Click"/>
+        <div id="container">
+            <header>
+                <h2>Giao diện ADMIN</h2>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li>
+                       <a href="QLCaSi.aspx">Quản lý Ca Sĩ</a>
+                    </li>
+                    <li>
+                       <a href="QLTheLoai.aspx">Quản lý Thể loại</a>
+                    </li>
+                    <li>
+                       <a href="QLChuDe.aspx">Quản lý Chủ đề</a>
+                    </li>
+                    <li>
+                       <a href="QLPlaylist.aspx">Quản lý Playlist</a>
+                    </li>
+                     <li>
+                       <a href="QLBaiHat.aspx">Quản lý Bài Hát</a>
+                    </li>
+                     <li>
+                       <a href="QLAlbum.aspx">Quản lý Album</a>
+                    </li>
+                     <li>
+                       <a href="QLCaSiBH.aspx">Quản lý Ca Sĩ-Bài Hát</a>
+                    </li>
+                     <li>
+                       <a href="QLCaSiAB.aspx">Quản lý Ca Sĩ-Album</a>
+                    </li>
+                     <li>
+                       <a href="QLPlaylistBH.aspx">QL PlayList-Bài Hát</a>
+                    </li>
+                     <li>
+                       <a href="QLTaiKhoan.aspx">Quản lý Tài Khoản</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="main">
+                    <div id="left">
+                         <asp:ContentPlaceHolder ID="noidung1" runat="server">
+                           
+                         </asp:ContentPlaceHolder>
+                    </div>
+                     <div id="right">
+                         <asp:ContentPlaceHolder ID="noidung2" runat="server"></asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                
+            <footer>
+                <h2>Lê Văn Tâm </h2>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

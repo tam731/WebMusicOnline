@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Nhom18.Views.Shared.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="tieude" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </title>
+        <link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon">
+        <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+        <link href="../../css/fontawesome.min.css" rel="stylesheet"/>
+    <style>
+        .button{
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+      <header>
+         <a href="TrangChu.aspx" style="margin-bottom:-15px;"><img src="../../images/logo.png" alt="logo" width="60" height="30" /></a>
+        <nav>
+          <ul>
+            <li><a href="Baihat.aspx">Bài hát</a></li>
+            <li><a href="Chude.aspx">Chủ đề</a></li>
+            <li><a href="Theloai.aspx">Thể loại</a></li>
+            <li><a href="Casi.aspx">Ca sĩ</a></li>
+            <li><a href="PlayList.aspx">Playlist</a></li>
+          </ul>
+        </nav>
+          <div class="login">
+              <a href="../BE/Login.aspx">Đăng nhập |</a>
+              <a href="../BE/Dangky.aspx">Đăng ký</a>
+          </div>
+         
+  
+          <div style="width:150px;display:flex;" >
+            <asp:TextBox runat="server" ID="txtSearch"></asp:TextBox>
+            <asp:Button runat="server" Text="Tìm" CssClass="button" OnClick="Unnamed1_Click" />
+          </div>
+  
+      </header>
+      <hr />
+      <div class="main1">
+        <asp:ContentPlaceHolder ID="noidung" runat="server">
+
+        </asp:ContentPlaceHolder>
+      <footer>
+        <div class="top">
+          <h4>LIÊN KẾT VÀ HỢP TÁC</h4>
+          <div class="logo autoplay">
+            <div class="item">
+                <a href="https://www.facebook.com/benthanhav/"><img src="../../images/logo_footer/benthanhaudio.png" alt="benthanh" /></a>
+            </div>
+            <div class="item">
+                <a href="https://www.acrcloud.com/"><img src="../../images/logo_footer/acr.png" alt="acr" /></a>
+            </div>
+            <div class="item">
+                <a href="https://www.ygfamily.com/"><img src="../../images/logo_footer/yg.png" alt="yg" /></a>
+            </div>
+            <div class="item">
+                <a href="https://skymusic.com.vn/"><img src="../../images/logo_footer/skymusic.png" alt="skymusic" /></a>
+            </div>
+            <div class="item">
+                <a href="https://namvietmedia.vn/"><img src="../../images/logo_footer/namviet.png" alt="namviet" /></a>
+            </div>
+            <div class="item">
+                <a href="https://www.sonymusic.com/"><img src="../../images/logo_footer/sonymusic.png" alt="sonymusic" /></a>
+            </div>
+            <div class="item">
+              <a href="https://riav.org.vn/"><img src="../../images/logo_footer/riav.jpg" alt="riav" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="left">
+            <h4>HỖ TRỢ</h4>
+            <div class="list">
+              <div class="list1">
+                <ul>
+                  <li><a href="https://www.nct.vn/ho-tro">Trợ giúp</a></li>
+                  <li><a href="https://www.nhaccuatui.com/so_do.html">Sơ đồ</a></li>
+                  <li><a href="https://www.nhaccuatui.com/ncci">NCCI</a></li>
+                  <li><a href="https://www.nhaccuatui.com/lien-he-quang-cao">Liên hệ quảng cáo</a></li>
+                </ul>
+              </div>
+              <div class="list2">
+                <ul>
+                  <li><a href="https://www.nhaccuatui.com/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                  <li><a href="https://www.nhaccuatui.com/chinh-sach-so-huu-tri-tue">Chính sách SHTT</a></li>
+                  <li><a href="https://www.nhaccuatui.com/thoa-thuan-su-dung">Thỏa thuận sử dụng</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <h4>SẢN PHẨM KHÁC</h4>
+            <div class="list">
+              <div class="list1">
+                <ul>
+                  <li><a href="http://apps.nhaccuatui.com/nhaccuatui-for-mobile.html">Mobile App</a></li>
+                  <li><a href="https://www.nhaccuatui.com/">Mobile Web</a></li>
+                  <li><a href="http://apps.nhaccuatui.com/nhaccuatui-for-smart-tv.html">Smart TV</a></li>
+                  <li><a href="http://apps.nhaccuatui.com/nhaccuatui-for-desktop.html">Desktop</a></li>
+                </ul>
+              </div>
+              <div class="list2">
+                <ul>
+                  <li><a href="http://www.nhaccuatui.com/dich-vu-3g">Dịch vụ 3G</a></li>
+                  <li><a href="http://nctcorp.vn/">NCT Group</a></li>
+                  <li><a href="http://nctcorp.vn/tuyendung/">Tuyển dụng</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+            <div class="pic1">
+                <a href="https://www.facebook.com/NhacCuaTuiOfficial"><img src="../../images/logo_footer/fb.png" alt="fb" /></a>
+                <a href="https://www.instagram.com/Nhaccuatui/"><img src="../../images/logo_footer/insta.png" alt="insta" /></a>
+            </div>
+            <div class="pic2">
+                <a href="https://play.google.com/store/apps/details?id=ht.nct&hl=vi"><img src="../../images/logo_footer/chplay.png" alt="chplay" /></a>
+                <a href="https://itunes.apple.com/vn/app/nhaccuatui/id1210763463?ls=1&mt=8"><img src="../../images/logo_footer/appstore.png" alt="appstore" /></a>
+                <a href="http://cdc.hispace.hicloud.com/000000fC"><img src="../../images/logo_footer/app.png" alt="app" /></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="bottom">
+          <div>
+              <a href="https://www.nhaccuatui.com/"><img src="../../images/logo_footer/logo.png" alt="logo" width="100" /></a>
+           </div>
+          <div class="info">
+            <h3>CÔNG TY CỔ PHẦN N C T</h3>
+            <ul>
+              <li>Chủ sở hữu website : <b>Ông Nhan Thế Luân</b></li>
+              <li>
+                Giấy phép MXH số 499/GP-BTTTT do Bộ Thông tin và Truyền thông
+                cấp ngày 28/09/2015.
+              </li>
+              <li>
+                Giấy Chứng nhận Đăng ký Kinh doanh số 0305535715 do Sở kế hoạch
+                và Đầu tư thành phố Hồ Chí Minh cấp ngày 01/03/2008.
+              </li>
+            </ul>
+          </div>
+          <div class="anh">
+                <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=44267"><img src="../../images/logo_footer/bocongthuong.png" width="100" height="60" alt="thongbao" /></a>
+                <a href="https://www.dmca.com/Protection/Status.aspx?ID=6aa0e355-51a6-4291-a835-45d4eb2d0ce1"><img src="../../images/logo_footer/dmca.png" width="140" height="80" alt="dmca" /></a>
+          </div>
+        </div>
+          <div class="footer">
+              <div class="footer-left">
+                   <a href="support@nct.vn">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Tòa nhà HAGL Safomec,7/1 Thành Thái, P14, Q10,TP.HCM</span>
+              </a>
+              <a href="support@nct.vn">
+                  <i class="fas fa-envelope-open"></i>
+                  <span>support@nct.vn</span>
+              </a>
+                <a href="support@nct.vn">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>(028) 3868 7979</span>
+              </a>
+              </div>
+              <p>&copy; NCT Corp. All rights reserved.</p>
+          </div>
+      </footer>
+    </div>
+    </div>
+        <script src="../../js/app.js"></script>
+    </form>
+</body>
+</html>
